@@ -1,0 +1,55 @@
+.outerContainer {
+  width: 99%;
+  background-color: rgb(215, 205, 191);
+  margin: 0.8em;
+  margin-top: 1.5em;
+  overflow: auto;
+}
+
+.bannerAndIitiativesContainer {
+  margin: 1em 2em;
+  width: 100%;
+  background-image: linear-gradient(to right, red, purple);
+}
+.bannerImage {
+  width: 80%;
+  height: 400x;
+  z-index: 0;
+  margin-top: 1.5em;
+  margin-left: 10%;
+  border-radius: 2em;
+}
+.initiativesContainer1 {
+  margin-top: -5%;
+  margin-bottom: 1em;
+  z-index: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.initiativesContainer2 {
+  margin: auto;
+  margin-top: 2%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initiativeImage {
+  z-index: 5;
+  width: 40%;
+  height: 400px;
+  border-radius: 3em;
+}
+.initiativeImage2 {
+  width: 70%;
+  height: 500px;
+  border-radius: 1em;
+}
+.initiativeImage3 {
+  margin-top: 7%;
+  width: 40%;
+  height: 400px;
+  border-radius: 3em;
+}
