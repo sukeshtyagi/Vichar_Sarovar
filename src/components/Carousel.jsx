@@ -5,28 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import style from "../style/Carousel.module.css";
 
 function Carousel() {
-  const NextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
-    );
-  };
-
-  const PrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "blue" }}
-        onClick={onClick}
-      />
-    );
-  };
-
   const settings = {
     dots: true,
     infinite: true,
@@ -40,7 +18,6 @@ function Carousel() {
   return (
     <div className={style.carouselContainer}>
       <Slider {...settings}>
-       
         <div>
           <img
             src="https://m.media-amazon.com/images/I/41ka6Bsj+XL._SY445_SX342_.jpg"
