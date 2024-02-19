@@ -1,6 +1,8 @@
 .headerContainer {
+  max-width: 1500px;
   width: 100%;
-  margin: 0;
+  height: 60px; /* Adjust the height to your liking */
+  margin: 0 auto;
   background-color: rgb(213, 205, 191);
   display: flex;
   justify-content: space-between;
@@ -8,11 +10,20 @@
   border: none;
   border-radius: 1em;
 }
+.navlink {
+  color: #000;
+  text-decoration: none;
+}
 
+.navlink:hover {
+  color: #f00808;
+}
 .headerCompanyName {
-  margin: 0.15em;
-  margin-left: 3em;
-  font-size: 1.3em;
+  padding: 0em 1em;
+  margin: 0.5em;
+  margin-left: 2em;
+  border-radius: 5em;
+  font-size: 1.25em;
   font-weight: 800;
   color: #000;
 }
@@ -21,16 +32,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0.1em;
+  padding: 0.25em;
   font-size: 1.4em;
-  font-weight: 300;
+  font-weight: 800;
   color: #000 !important;
-}
-.navlink {
-  color: #000;
-  text-decoration: none;
-}
-
-.navlink:hover {
-  color: #f60505;
 }

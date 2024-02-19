@@ -7,7 +7,7 @@ function Header() {
     <div className={style.headerContainer}>
       <div className={style.headerCompanyName}>
         <NavLink to="/home" className={style.navlink}>
-          <h3>Novel_Stash</h3>
+          <h3>Vachan_Sarovar</h3>
         </NavLink>
       </div>
 

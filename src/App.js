@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import style from "./style/App.module.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Initiatives from "./components/Initiatives";
@@ -8,7 +9,7 @@ import Login from "./components/Login";
 
 function App() {
   return (
-    <>
+    <div className={style.appContainer}>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -20,7 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
