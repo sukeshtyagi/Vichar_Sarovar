@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Initiatives from "./components/Initiatives";
 import About from "./components/About";
 import Reach from "./components/Reach";
+import ConfirmLogin from "./components/ConfirmLogin";
 import Login from "./components/Login";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/initiatives" element={<Initiatives />} />
           <Route path="/about" element={<About />} />
           <Route path="/reach" element={<Reach />} />
+          <Route path="/ConfirmLogin" element={<ConfirmLogin />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>

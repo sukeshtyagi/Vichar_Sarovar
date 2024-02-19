@@ -23,7 +23,7 @@ function Header() {
           <h5>Reach us</h5>
         </NavLink>
 
-        <NavLink to="/login" className={style.navlink}>
+        <NavLink to="/confirmLogin" className={style.navlink}>
           <h5>Login</h5>
         </NavLink>
       </div>
