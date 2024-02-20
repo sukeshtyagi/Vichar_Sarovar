@@ -4,7 +4,7 @@
   max-width: 600px;
   height: 86vh;
   margin: auto;
-  margin-top: 25px; /*to be set after all comleted if needed*/
+  margin-top: 1.5em;
   border-radius: 2em;
   display: flex;
   flex-direction: column;
@@ -13,12 +13,10 @@
   margin-left: 1em;
   padding: 0.5em;
   font-size: 1.75em;
-  /*background-color: orange;*/
   max-height: 2em;
 }
 .newProductContainer form {
   margin-left: 0em;
-  /*background-color: red;*/
   display: flex;
   flex-direction: column;
 }
@@ -29,12 +27,11 @@
   align-items: center;
 }
 .newProductLabels {
-  /* background-color: pink;*/
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  margin-left: 1.5em; /*may need to change for alignment forstting font txt*/
+  margin-left: 1.5em;
 }
 .newProductLabels label {
   font-size: 1.5em;
@@ -47,7 +44,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.5em; /**/
+  gap: 0.5em;
 }
 .newProductInputs input {
   font-size: 1.25em;
@@ -59,6 +56,9 @@
   border-radius: 1em;
   outline: none;
   width: 100%;
+}
+.newProductInputs input:hover {
+  background-color: rgba(246, 211, 162, 0.884);
 }
 .newProductContainer button {
   margin: 0 auto;
@@ -87,15 +87,16 @@
 .newProductContainer button::before {
   content: "";
   position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
   border: 2px solid transparent;
   border-radius: 2em;
+  background-color: transparent;
   transition: border-color 0.5s ease;
 }
 
 .newProductContainer button:hover::before {
-  border-color: #000;
+  border-color: rgb(245, 144, 3);
 }
