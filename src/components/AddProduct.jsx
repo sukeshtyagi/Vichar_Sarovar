@@ -18,32 +18,32 @@ function AddProduct() {
     }));
   };
 
-  const handleImageChange = (e) => {
-    setProductData((productData) => ({
-      ...productData,
-      image: e.target.value,
-    }));
-  };
-
   const handleDataUpload = async (e) => {
     e.preventDefault();
     console.log(productData);
     const formData = new FormData();
-    formData.append("name", productData.name);
-    formData.append("image", productData.image);
-    formData.append("author", productData.author);
-    formData.append("price", productData.price);
-    formData.append("category", productData.category);
 
     const url = "http://localhost:4000/products";
     const payload = {
       method: "POST",
-      body: formData,
+      header: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(productData),
     };
     try {
       const response = await fetch(url, payload);
+      console.log(response);
       if (response.ok) {
         console.log("Data uploaded successfully");
+        setProductData({
+          name: "",
+          image: "",
+          author: "",
+          price: "",
+          category: "",
+        });
       }
     } catch (error) {
       console.log("Error >>", error);
@@ -75,7 +75,7 @@ function AddProduct() {
               type="text"
               name="image"
               value={productData.image}
-              onChange={handleImageChange}
+              onChange={handleChange}
             />
 
             <input

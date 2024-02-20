@@ -18,10 +18,60 @@
   ],
   "products": [
     {
-      "brand": "ascdfg",
-      "price": "",
-      "madeIN": "",
-      "image": ""
+      "id": "0742",
+      "name": "Veer Savarkar",
+      "image": "https://m.media-amazon.com/images/I/71sBeOnhUcL._SL1500_.jpg",
+      "author": "Udhay Mahurkar and chirayu Pandit",
+      "price": "600",
+      "category": "Factual"
+    },
+    {
+      "id": "5fba",
+      "name": "Veer Savarkar",
+      "image": "https://m.media-amazon.com/images/I/71sBeOnhUcL._SL1500_.jpg",
+      "author": "Udhay Mahurkar and chirayu Pandit",
+      "price": "600",
+      "category": "Factual"
+    },
+    {
+      "id": "c9d0",
+      "name": "Revolutionaries",
+      "image": "https://m.media-amazon.com/images/I/51PLOKUW6AL._SY445_SX342_.jpg",
+      "author": "Sanjeev Sanyal",
+      "price": "400",
+      "category": "Bharatiya Freedom Movement"
+    },
+    {
+      "id": "0612",
+      "name": "Jeh: A Life of J.R.D Tata",
+      "image": "https://m.media-amazon.com/images/I/61JWWgmWzyL._SY425_.jpg",
+      "author": "B.K.Dadabhoy",
+      "price": "700",
+      "category": "Biography"
+    },
+    {
+      "id": "36d4",
+      "name": "Vajpayee",
+      "image": "https://m.media-amazon.com/images/I/71Q09N48z2L._AC_UY218_.jpg",
+      "author": "Abhishek Choudhary",
+      "price": "609",
+      "category": "Non-Fiction"
+    },
+    {
+      "id": "c35e",
+      "name": "Vishvaguru Vivekanand",
+      "image": "https://m.media-amazon.com/images/I/81xsUK2TdvL._AC_UY218_.jpg",
+      "author": "M.I. Rajasve",
+      "price": "189",
+      "category": "Non-Fiction"
+    },
+    {
+      "id": "ca36",
+      "name": "Believe In Yourself",
+      "image": "https://m.media-amazon.com/images/I/41oSNHThR5L._SY445_SX342_.jpg",
+      "author": "Swami  Vivekanand",
+      "price": "800",
+      "category": "Enlightment"
     }
   ]
 }
