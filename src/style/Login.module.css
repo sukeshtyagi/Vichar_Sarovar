@@ -6,6 +6,7 @@
   margin-top: 1.8em;
   background-color: rgb(213, 205, 191);
   border-radius: 2em;
+  position: relative;
 }
 
 .loginHeadingContainer {
@@ -86,4 +87,15 @@
 .navLink p {
   color: #000;
   text-decoration: none;
+}
+.navLinkSignUp {
+  font-size: 1em;
+  color: #2980b9;
+}
+.navLinkSignUpPara {
+  position: absolute;
+  left: 1em;
+  font-size: 1.25em;
+  margin-top: -0.25em;
+  margin-left: 1.75em;
 }

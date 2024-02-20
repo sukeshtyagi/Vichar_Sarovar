@@ -3,7 +3,7 @@ import style from "../style/Login.module.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Login() {
+function SignUp() {
   const navigate = useNavigate();
   const [inputData, setInputData] = useState({ email: "", password: "" });
 
@@ -19,23 +19,20 @@ function Login() {
     e.preventDefault();
     console.log(inputData);
     const url = "http://localhost:4000/users";
+    const payload = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(inputData),
+    };
     try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(data);
-      if (data) {
-        const match = data.find(
-          (item) =>
-            item.email === inputData.email &&
-            item.password == inputData.password
-        );
-        console.log(match);
-        if (match) {
-          navigate("/home");
-          localStorage.setItem("userName", inputData.email);
-        } else {
-          throw (new Error(), "Data entered is incorrect");
-        }
+      const response = await fetch(url, payload);
+      if (response.ok) {
+        console.log("data uploaded successfully");
+        navigate("/home");
+        localStorage.setItem("userName", inputData.email);
       }
     } catch (error) {
       console.log("Error >>> ", error);
@@ -67,13 +64,13 @@ function Login() {
         <button onClick={handleSubmit}>Login</button>
       </div>
       <p className={style.navLinkSignUpPara}>
-        Did not have account?
-        <NavLink className={style.navLinkSignUp} to="/signup">
-          Sign Up
+        Have an account?
+        <NavLink className={style.navLinkSignUp} to="/ConfirmLogin">
+          Sign In
         </NavLink>
       </p>
     </div>
   );
 }
 
-export default Login;
+export default SignUp;

@@ -7,6 +7,10 @@ import About from "./components/About";
 import Reach from "./components/Reach";
 import ConfirmLogin from "./components/ConfirmLogin";
 import Login from "./components/Login";
+import Logout from "./components/Logout";
+import SignUp from "./components/SignUp";
+import Products from "./components/Products";
+import AddProduct from "./components/AddProduct";
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
           <Route path="/reach" element={<Reach />} />
           <Route path="/ConfirmLogin" element={<ConfirmLogin />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/add" element={<AddProduct/>} />
         </Routes>
       </BrowserRouter>
     </div>

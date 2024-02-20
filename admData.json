@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "email": "namog@namoShree.org",
+      "password": "1601",
+      "id": "55ca"
+    },
+    {
+      "email": "shreeg@namoShree.org",
+      "password": "1601",
+      "id": "d50f"
+    },
+    {
+      "id": "8c60",
+      "email": "shreeg@namoShree.org",
+      "password": "3011"
+    }
+  ],
+  "products": [
+    {
+      "brand": "",
+      "price": "",
+      "madeIN": "",
+      "image": ""
+    }
+  ]
+}
