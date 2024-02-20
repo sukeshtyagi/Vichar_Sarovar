@@ -10,8 +10,8 @@ import Login from "./components/Login";
 import Logout from "./components/Logout";
 import SignUp from "./components/SignUp";
 import Products from "./components/Products";
-import AddProduct from "./components/AddProduct";
 import UpdateProduct from "./components/UpdateProduct";
+import AddProduct from "./components/AddProduct";
 
 function App() {
   return (

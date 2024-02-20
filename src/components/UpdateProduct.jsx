@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
+import ProductParent from "./ProductParent";
 
 function UpdateProduct() {
+  const params = useParams();
+  const { id } = params;
   return (
-    <div>UpdateProduct</div>
-  )
+    <>
+      <ProductParent
+        containerHeading="Update Product"
+        buttonText1=" Edit"
+        buttonText2=" Delete"
+      />
+    </>
+  );
 }
 
-export default UpdateProduct
+export default UpdateProduct;
