@@ -11,6 +11,7 @@ import Logout from "./components/Logout";
 import SignUp from "./components/SignUp";
 import Products from "./components/Products";
 import AddProduct from "./components/AddProduct";
+import UpdateProduct from "./components/UpdateProduct";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/add" element={<AddProduct/>} />
+          <Route path="/add" element={<AddProduct />} />
+          <Route path="/update/:id" element={<UpdateProduct />} />
         </Routes>
       </BrowserRouter>
     </div>
