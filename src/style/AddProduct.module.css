@@ -1,0 +1,101 @@
+.newProductContainer {
+  background-color: rgb(215, 205, 191);
+  width: 100%;
+  max-width: 600px;
+  height: 86vh;
+  margin: auto;
+  margin-top: 25px; /*to be set after all comleted if needed*/
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.newProductContainer h2 {
+  margin-left: 1em;
+  padding: 0.5em;
+  font-size: 1.75em;
+  /*background-color: orange;*/
+  max-height: 2em;
+}
+.newProductContainer form {
+  margin-left: 0em;
+  /*background-color: red;*/
+  display: flex;
+  flex-direction: column;
+}
+.newProductDetails {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.25em;
+  align-items: center;
+}
+.newProductLabels {
+  /* background-color: pink;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 1.5em; /*may need to change for alignment forstting font txt*/
+}
+.newProductLabels label {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  padding: 0.25em;
+}
+.newProductInputs {
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5em; /**/
+}
+.newProductInputs input {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #000;
+  padding: 0.25em;
+  padding-left: 1em;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  width: 100%;
+}
+.newProductContainer button {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  padding: 0.5em 0.75em;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  position: relative;
+}
+.newProductContainer button {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  padding: 0.5em 0.75em;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+  position: relative;
+}
+.newProductContainer button::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid transparent;
+  border-radius: 2em;
+  transition: border-color 0.5s ease;
+}
+
+.newProductContainer button:hover::before {
+  border-color: #000;
+}
