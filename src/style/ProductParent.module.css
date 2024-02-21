@@ -1,7 +1,7 @@
 .newProductContainer {
   background-color: rgb(215, 205, 191);
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   height: 83vh;
   margin: auto;
   margin-bottom: 0;
@@ -46,6 +46,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5em;
+  width: 62%;
 }
 .newProductInputs input {
   font-size: 1.25em;
@@ -75,7 +76,7 @@
 }
 .newProductContainer button {
   margin: 0 auto;
-  margin-top: 1.5em;
+  margin-top: 1em;
   font-size: 1.5em;
   font-weight: 500;
   color: #000;
@@ -84,6 +85,7 @@
   border-radius: 1em;
   outline: none;
   position: relative;
+  left: -12em;
 }
 .newProductContainer button::before {
   content: "";
