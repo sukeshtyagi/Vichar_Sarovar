@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import style from "../style/ProductParent.module.css";
 
 function ProductParent({
@@ -11,11 +12,15 @@ function ProductParent({
   deleteButton,
   getProductData,
   handleDataUpdate,
-  navigate,
+  handleDataDelete,
 }) {
   useEffect(() => {
-    getProductData();
+    if (getProductData) {
+      getProductData();
+    }
   }, []);
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,6 +29,22 @@ function ProductParent({
       [name]: value,
     }));
   };
+
+  const handleDataUploadAndNavigate = async () => {
+    navigate("/products");
+    await handleDataUpload();
+  };
+
+  const handleDataUpdateAndNavigate = async () => {
+    navigate("/products");
+    await handleDataUpdate();
+  };
+
+  const handleDataDeleteAndNavigate = async () => {
+    navigate("/products");
+    await handleDataDelete();
+  };
+
   return (
     <div className={style.newProductContainer}>
       <h2>{containerHeading}</h2>
@@ -75,13 +96,15 @@ function ProductParent({
           </div>
         </div>
         {uploadButton && (
-          <button onClick={handleDataUpload}>{uploadButton}</button>
+          <button onClick={handleDataUploadAndNavigate}>{uploadButton}</button>
         )}
 
         {updateButton && (
-          <button onClick={handleDataUpdate}>{updateButton}</button>
+          <button onClick={handleDataUpdateAndNavigate}>{updateButton}</button>
         )}
-        {deleteButton && <button>{deleteButton}</button>}
+        {deleteButton && (
+          <button onClick={handleDataDeleteAndNavigate}>{deleteButton}</button>
+        )}
       </form>
     </div>
   );

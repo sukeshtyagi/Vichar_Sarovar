@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ProductParent from "./ProductParent";
 
 function UpdateProduct() {
-  const navigate = useNavigate();
   const [productData, setProductData] = useState({
     name: "",
     image: "",
@@ -49,13 +48,33 @@ function UpdateProduct() {
     try {
       const response = await fetch(url, payload);
       if (response.ok) {
-        navigate("/products");
         console.log("Data updated successfully");
       }
     } catch (error) {
       console.log("Error >>", error);
     }
   };
+
+  const handleDataDelete = async () => {
+    console.log(productData, id);
+  
+    const url = `http://localhost:4000/products/${id}`;
+    const payload = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+    try {
+      const response = await fetch(url, payload);
+      if (response.ok) {
+        console.log("Data deleted successfully");
+      }
+    } catch (error) {
+      console.log("Error >>", error);
+    }
+  };
+  
 
   return (
     <>
@@ -67,7 +86,7 @@ function UpdateProduct() {
         setProductData={setProductData}
         getProductData={getProductData}
         handleDataUpdate={handleDataUpdate}
-        navigate={navigate}
+        handleDataDelete={handleDataDelete}
       />
     </>
   );
