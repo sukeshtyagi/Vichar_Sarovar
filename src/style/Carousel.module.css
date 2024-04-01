@@ -1,5 +1,16 @@
 .carouselContainer {
   margin-top: 20px;
-  margin-left: 150px;
+  margin-left: 50px;
   background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .carouselContainer {
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carouselContainer img {
+    max-width: 100%; /* Adjust the image size to fit the screen */
+    height: auto;
+  }
 }
