@@ -17,9 +17,8 @@ function App() {
   return (
     <div className={style.appContainer}>
       <BrowserRouter>
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Header />} />
           <Route path="/home" element={<Home />} />
           <Route path="/initiatives" element={<Initiatives />} />
           <Route path="/about" element={<About />} />
