@@ -43,7 +43,7 @@ function Products() {
                 <div className={style.productImage}>
                   <img
                     src={item.image}
-                    alt="image of product"
+                    alt="product"
                     width={50}
                     height={50}
                   />

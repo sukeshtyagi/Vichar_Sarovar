@@ -27,7 +27,7 @@ function Login() {
         const match = data.find(
           (item) =>
             item.email === inputData.email &&
-            item.password == inputData.password
+            item.password === inputData.password
         );
         console.log(match);
         if (match) {
