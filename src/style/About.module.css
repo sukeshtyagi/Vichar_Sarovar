@@ -1,0 +1,88 @@
+.aboutContainer {
+  width: 100%;
+  height: auto;
+  line-height: 1.8;
+  padding: 0 15px;
+  background: linear-gradient(
+    to right,
+    #d46f6f,
+    #b6eae6,
+    #dc7ced,
+    #f6eeee,
+    #f6f604
+  );
+}
+
+.header {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  font-size: 0.65em;
+  font-weight: 100;
+}
+
+.aboutCompany {
+  text-align: justify;
+}
+
+.ethosContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+
+.ethosHeadingContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.ethosHeadingContainer > h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+.girlEductaionEthoContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.ethoHeading {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutEtho {
+  text-align: justify;
+}
+
+.footerContainer {
+  line-height: 1.8;
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 1.25em;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+}

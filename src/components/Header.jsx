@@ -15,7 +15,7 @@ function Header() {
             setSmallScreen(false);
           }}
         >
-          <h3>Vachan_Sarovar</h3>
+          <h3>Vichar_Sarovar</h3>
         </NavLink>
       </div>
 

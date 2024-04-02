@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../style/About.module.css";
 import { NavLink } from "react-router-dom";
+import Header from "./Header";
 
 function About() {
   return (
@@ -9,7 +10,7 @@ function About() {
         <NavLink className={style.navlink} to="/home">
           <h1>About Vichar Sarovar</h1>
         </NavLink>
-        <p>
+        <p className={style.aboutCompany}>
           At Vichar Sarovar, we believe in the transformative power of books to
           not only enrich minds but also to inspire positive change in our
           communities and the world at large. Rooted in our ethos of social
