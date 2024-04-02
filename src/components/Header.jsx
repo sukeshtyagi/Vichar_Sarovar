@@ -8,7 +8,13 @@ function Header() {
   return (
     <div className={style.headerContainer}>
       <div className={style.headerCompanyName}>
-        <NavLink to="/home" className={style.navlink}>
+        <NavLink
+          to="/home"
+          className={style.navlink}
+          onClick={() => {
+            setSmallScreen(false);
+          }}
+        >
           <h3>Vachan_Sarovar</h3>
         </NavLink>
       </div>
@@ -53,7 +59,12 @@ function Header() {
                 d="M6 18 18 6M6 6l12 12"
               />
             </svg>
-            <div className={style.itemsDiv}>
+            <div
+              className={style.itemsDiv}
+              onClick={() => {
+                setSmallScreen(false);
+              }}
+            >
               {user && (
                 <>
                   <NavLink to="/products" className={style.navlink}>
