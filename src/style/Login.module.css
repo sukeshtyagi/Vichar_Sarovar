@@ -1,56 +1,70 @@
 .loginContainer {
   width: 100%;
-  max-width: 600px;
-  height: 70vh;
   margin: auto;
   margin-top: 1.8em;
   background-color: rgb(213, 205, 191);
-  border-radius: 2em;
+  padding: 0 0px;
+  border-radius: 1em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .loginHeadingContainer {
   width: 100%;
+  padding: 2px;
 }
-.loginHeadingContainer p {
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLink p {
+  color: #000;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 2px 5px;
   position: relative;
-  top: 1em;
-  width: 80%;
-  margin-top: 1em;
-  margin-left: 1em;
-  padding: 0em;
-  font-size: 1.25em;
-  font-weight: 600;
-  text-align: center;
+  top: 15px;
+  left: 15px;
+  color: #168edf;
 }
+
 .loginDetailsContainer {
-  margin-top: 4em;
-  /*background-color: red;*/
+  background-color: transparent;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
+
 .loginDetailsContainer label {
-  font-size: 1.8em;
-  margin-left: 2em;
-  margin-bottom: 0.5em;
+  font-size: 1.25em;
+  margin-left: 1.1em;
+  margin-bottom: 0em;
 }
+
 .loginDetailsContainer input {
-  font-size: 1.5em;
-  margin-left: 2em;
-  margin-bottom: 0.5em;
+  box-sizing: border-box;
+  font-size: 1em;
+  margin-left: 1.1em;
   border: none;
   border-radius: 1.5em;
   padding: 0.3em;
   padding-left: 1.2em;
   outline: none;
-  width: 100%;
-  max-width: 400px;
+  width: 80%;
 }
+
 .loginDetailsContainer button {
-  font-size: 1.5em;
+  box-sizing: border-box;
+  font-size: 1em;
   margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
   padding: 0.5em 1em;
   border: none;
   border-radius: 1.5em;
@@ -80,22 +94,45 @@
 .loginDetailsContainer button:hover {
   background-color: #2980b9;
 }
-.navLink {
-  text-decoration: none;
+
+.navLinkSignUpPara {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  margin-left: 1.1em;
+  margin-bottom: 1em;
 }
 
-.navLink p {
-  color: #000;
-  text-decoration: none;
-}
 .navLinkSignUp {
-  font-size: 1em;
-  color: #2980b9;
-}
-.navLinkSignUpPara {
-  position: absolute;
-  left: 1em;
+  box-sizing: border-box;
   font-size: 1.25em;
-  margin-top: -0.25em;
-  margin-left: 1.75em;
+  text-decoration: none;
+  color: #168edf;
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 184px) {
+  .loginDetailsContainer,
+  .navLinkSignUpPara,
+  .navLinkSignUp,
+  .navLink p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loginContainer {
+    width: 80%;
+  }
+  .loginDetailsContainer button {
+    margin-top: 1em;
+  }
 }

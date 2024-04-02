@@ -1,5 +1,5 @@
 .aboutContainer {
-  width: 100%;
+  width: 90%;
   overflow-x: hidden;
   height: auto;
   line-height: 1.8;
@@ -39,7 +39,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   padding: 10px;
   padding-bottom: 0;
 }
@@ -70,14 +70,14 @@
 }
 
 .aboutEtho {
-  width: 90%;
-  padding-right: 10px;
+  text-align: justify;
+  width: 100%;
 }
 
 .footerContainer {
   line-height: 1.8;
   text-align: justify;
-  width: 90%;
+  width: 95%;
 }
 @media screen and (min-width: 768px) {
   .aboutContainer {
