@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Reach() {
   return (
     <div className={style.reachContainer}>
-      <p>
+      <p className={style.navlinkContainer}>
         <NavLink to="/home" className={style.navlink}>
           Home
         </NavLink>
@@ -21,25 +21,24 @@ function Reach() {
       <div className={style.reachMainSection}>
         <h4>Customer Support</h4>
         <p>
-          WhatsApp us:{" "}
+          WhatsApp us: <br />
           <NavLink to="/home" className={style.navlinkSpan}>
             0123456789
           </NavLink>
-          {/* <span>0123456789</span>*/}
         </p>
         <p>
           Email at:
+          <br />
           <NavLink to="/home" className={style.navlinkSpan}>
             CS@vicharsarovar.com
           </NavLink>
-          {/*<span>CS@vicharsarovar.com</span>*/}
         </p>
         <p>
           Call on:
+          <br />
           <NavLink to="/home" className={style.navlinkSpan}>
             0123456789
           </NavLink>
-          {/* <span>0123456789</span>*/}
         </p>
         <p>8:00 AM to 8:00 PM,365 days</p>
       </div>

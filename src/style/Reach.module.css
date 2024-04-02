@@ -1,72 +1,92 @@
 .reachContainer {
-  width: auto;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 2em;
+  padding: 0.5em;
   position: relative;
 }
+
 .navlink {
   color: rgb(130, 130, 229);
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   padding: 1em;
   padding-left: 0;
   padding-right: 0.5em;
 }
-.reachContainer p {
-  margin-top: 2em;
+
+.navlinkContainer {
+  margin-top: 0.75em;
   font-weight: 400;
 }
+
 .reachContainer p span {
   color: rgb(65, 67, 60);
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-left: 0;
   position: absolute;
-  top: 22px;
+  top: 8px;
   font-weight: 400;
   margin-top: 0.5em;
 }
+
 .reachHeaderSection h4 {
-  font-size: 1.5em;
-  margin-bottom: 0;
+  font-size: 1.2em;
+  margin: 0;
   color: #000;
+  font-weight: 600;
 }
+
 .reachHeaderSection p {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  text-align: justify;
   color: #000;
   font-weight: 400;
   margin-top: 0.5em;
 }
+
 .reachMainSection {
   position: relative;
 }
+
 .reachMainSection h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #000;
   font-weight: 600;
-  margin-bottom: 1.25em;
+  margin: 0;
 }
+
 .reachMainSection p {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #000;
   margin-bottom: 0;
   margin-top: 0.75em;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
 }
+
 .navlinkSpan {
   color: rgb(45, 45, 132);
   text-decoration: none;
   font-weight: 400;
   padding-left: 0.1em;
 }
+
 .reachFooterSection p {
+  text-align: justify;
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 400;
-  margin-top: 1.5em;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .reachContainer {
+    width: 80%;
+    margin: auto;
+  }
 }
