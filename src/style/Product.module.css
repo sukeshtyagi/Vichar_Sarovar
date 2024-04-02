@@ -1,3 +1,47 @@
 .productsOuterContainer {
-  background-color: orange;
+  width: 100vw;
+}
+
+.regretMessageContainer {
+  margin-top: 10x;
+  width: 90%;
+  text-align: justify;
+  font-size: 1.2em;
+  margin-top: 20px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: auto;
+}
+
+.regretMessage {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.gitHubRepoSpan {
+  word-wrap: break-word;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(38, 142, 238);
+  cursor: pointer;
+}
+
+.emailSpan {
+  word-wrap: break-word;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(38, 142, 238);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .regretMessageContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25em;
+    text-align: left;
+  }
 }

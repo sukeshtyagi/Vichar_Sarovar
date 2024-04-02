@@ -19,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path="/*" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/initiatives" element={<Initiatives />} />
@@ -31,6 +32,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/add" element={<AddProduct />} />
           <Route path="/update/:id" element={<UpdateProduct />} />
+
         </Routes>
       </BrowserRouter>
     </div>
