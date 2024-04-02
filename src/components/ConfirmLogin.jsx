@@ -6,19 +6,20 @@ function ConfirmLogin() {
   const navigate = useNavigate();
 
   const handleYesClick = () => {
-    console.log("yes handel");
     navigate("/login");
   };
 
   const handleNoClick = () => {
-    console.log("no handel");
     navigate("/home");
   };
 
   return (
     <div className={styles.confirmLoginContainer}>
       <p>
-Apologies for the inconvenience, but our site is currently undergoing maintenance. Would you like to log in as an administrator during this period?</p>
+        Apologies for the inconvenience, but our site is currently undergoing
+        maintenance. Would you like to log in as an administrator during this
+        period?
+      </p>
       <div className={styles.buttonContainer}>
         <button className={styles.yesButton} onClick={handleYesClick}>
           Yes

@@ -6,7 +6,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0.5em;
+  margin: 10px 0;
+  border-radius: 1em;
   position: relative;
+  background-color: rgb(213, 205, 191);
 }
 
 .navlink {
@@ -42,6 +45,7 @@
 }
 
 .reachHeaderSection p {
+  width: 95%;
   font-size: 1.2em;
   text-align: justify;
   color: #000;
@@ -77,6 +81,7 @@
 }
 
 .reachFooterSection p {
+  width: 95%;
   text-align: justify;
   color: #000;
   font-size: 1.2em;
@@ -88,5 +93,6 @@
   .reachContainer {
     width: 80%;
     margin: auto;
+    margin-top: 15px;
   }
 }
