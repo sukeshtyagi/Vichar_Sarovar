@@ -7,7 +7,7 @@ function Initiatives() {
       <div className={style.bannerAndIitiativesContainer}>
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEBnopNpGzg7ZAUVBs4qof_NU26Kakg5H2Ss8dV64ebp_92uKdAiovNSldM3YF3qFlp2g&usqp=CAU"
-          alt="bannerImg"
+          alt="bannerImg" 
           className={style.bannerImage}
         />
         <div className={style.initiativesContainer1}>
@@ -29,7 +29,7 @@ function Initiatives() {
             alt="inv 3"
           />
         </div>
-        <div className={style.initiativesContainer1}>
+        <div className={style.initiativesContainer3}>
           <img
             src="https://indiacsr.in/wp-content/uploads/2022/11/Vedanta-Delhi-Half-Marathon-.jpg"
             className={style.initiativeImage3}
