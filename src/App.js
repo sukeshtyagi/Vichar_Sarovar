@@ -32,7 +32,6 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/add" element={<AddProduct />} />
           <Route path="/update/:id" element={<UpdateProduct />} />
-
         </Routes>
       </BrowserRouter>
     </div>
